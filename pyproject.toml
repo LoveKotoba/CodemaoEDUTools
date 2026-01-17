@@ -3,10 +3,7 @@ name = "codemaoedutools"
 version = "2.1.0"
 description = '为编程猫社区的"老师"们提供更便捷的API调用方案，且用且珍惜'
 readme = "README.md"
-authors = [
-    {name = "你的名字", email = "your.email@example.com"},
-]
-license = {text = "MIT"}
+license = "MIT"
 requires-python = ">=3.10"
 dependencies = [
     "coloredlogs>=15.0",
@@ -25,20 +22,4 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
 packages = ["CodemaoEDUTools"]
-
-[tool.setuptools.find]
-where = ["."]
-include = ["CodemaoEDUTools*"]
-exclude = [
-    "release*",
-    "build*",
-    "dist*",
-    "*.egg-info",
-    "test*",
-    "tests*",
-    "example*",
-    "doc*",
-    "*.pyc",
-    "__pycache__",
-    ".*",
-]
+include-package-data = true
