@@ -41,9 +41,9 @@
 
 例如：`cet version`
 
-当然，你也可以通过 `python -m CodemaoEDUTools` 来使用这个工具
+当然，你也可以在运行 `uv pip install -e .` 后通过 `uv run CodemaoEDUTools` 来使用这个工具
 
-我们已在 2.0 版本中移除了 main.py 文件，这意味着你无法像往常那样使用CET了
+我们在 2.1.0 版本中将项目管理器变更为了 uv，这意味着你无法像往常那样使用CET了
 
 ### 作为库调用
 
@@ -110,7 +110,11 @@
 - CodemaoCommunityHistory/CodemaoEduAutoReg
 - CodemaoCommunityHistory/CodemaoPL
 
-## ❤️ LRC
+## ❤️ 感谢各位贡献者
+
+<a href="https://github.com/wangs-official/codemaoedutools/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=wangs-official/codemaoedutools" />
+</a><br/><br/>
 
 > *結ばれた絆に 裏切ることない愛情 を*
 > 
