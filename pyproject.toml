@@ -1,9 +1,12 @@
 [project]
 name = "codemaoedutools"
 version = "2.1.0"
-description = "为编程猫社区的"老师"们提供更便捷的API调用方案，且用且珍惜"
+description = '为编程猫社区的"老师"们提供更便捷的API调用方案，且用且珍惜'
 readme = "README.md"
-license = "MIT"
+authors = [
+    {name = "你的名字", email = "your.email@example.com"},
+]
+license = {text = "MIT"}
 requires-python = ">=3.10"
 dependencies = [
     "coloredlogs>=15.0",
@@ -16,28 +19,26 @@ dependencies = [
 [project.scripts]
 codemaoedutools = "CodemaoEDUTools.__main__:main"
 
-# 添加以下配置解决包发现问题
 [build-system]
 requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["CodemaoEDUTools"]  # 明确指定主包
+packages = ["CodemaoEDUTools"]
 
 [tool.setuptools.find]
-where = ["."]  # 在当前目录查找
-include = ["CodemaoEDUTools*"]  # 只包含主包
+where = ["."]
+include = ["CodemaoEDUTools*"]
 exclude = [
     "release*",
-    "build*", 
+    "build*",
     "dist*",
     "*.egg-info",
-    "tests*",
     "test*",
-    "examples*",
-    "docs*",
-    "venv*",
-    ".git*",
+    "tests*",
+    "example*",
+    "doc*",
     "*.pyc",
-    "__pycache__"
+    "__pycache__",
+    ".*",
 ]
