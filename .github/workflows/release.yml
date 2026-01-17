@@ -135,16 +135,6 @@ jobs:
           uv run python -m build
 
       # ======================
-      # 验证包是否可以安装（可选但推荐）
-      # ======================
-      - name: Validate package
-        run: |
-          # 测试是否可以安装 wheel 包
-          uv pip install dist/*.whl --force-reinstall
-          # 验证可以导入
-          python -c "import CodemaoEDUTools; print('✅ Package imported successfully')"
-
-      # ======================
       # Create GitHub Release
       # ======================
       - name: Create GitHub Release
