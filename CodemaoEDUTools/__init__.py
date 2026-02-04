@@ -153,6 +153,7 @@ from .user import (  # noqa: E402
 from .work import (  # noqa: E402
     GetUserWork,
     LikeWork,
+    LikeReview,
     CollectionWork,
     ReportWork,
     SendReviewToWork,
@@ -198,6 +199,7 @@ __all__ = [
     # 作品
     "GetUserWork",
     "LikeWork",
+    "LikeReview",
     "CollectionWork",
     "ReportWork",
     "SendReviewToWork",
